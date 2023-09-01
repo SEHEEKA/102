@@ -7,7 +7,7 @@ from_dir = ""
 to_dir = ""
 
 list_of_files = os.listdir(from_dir)
-#print(list_of_files)
+
 
 # Move All Image files from Downloads Folder to Another Folder
 for file_name in list_of_files:
@@ -22,7 +22,7 @@ for file_name in list_of_files:
         path1 = from_dir + '/' + file_name                       # Example path1 : Downloads/ImageName1.jpg        
         path2 = to_dir + '/' + "Image_Files"                     # Example path2 : D:/My Files/Image_Files      
         path3 = to_dir + '/' + "Image_Files" + '/' + file_name   # Example path3 : D:/My Files/Image_Files/ImageName1.jpg
-       
+        
 
         # Check if Folder/Directory Path Exists Before Moving
         # Else make a NEW Folder/Directory Then Move
